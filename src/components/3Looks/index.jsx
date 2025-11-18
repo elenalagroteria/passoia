@@ -1,8 +1,8 @@
 import "./looks.scss";
-import labios from "../../assets/looks-labios";
-import olhos from "../../assets/looks-olhos";
-import rosto from "../../assets/looks-rosto";
-import tendencia from "../../assets/looks-tendencia"
+import labios from "../../assets/looks-labios.png";
+import olhos from "../../assets/looks-olhos.png";
+import rosto from "../../assets/looks-rosto.png";
+import tendencia from "../../assets/looks-tendencia.png"
 
 function Looks() {
   return (
