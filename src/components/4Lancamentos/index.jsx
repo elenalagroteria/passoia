@@ -3,6 +3,8 @@ import { useState } from "react";
 // Import das imagens
 import vermelho from "../../assets/vermelho.png";
 import azul from "../../assets/azul.png";
+import marrom from "../../assets/marrom.png";
+import nude from "../../assets/base.png";
 
 function Lancamentos() {
   // Estado que guarda a cor (imagem) atual
@@ -19,8 +21,14 @@ function Lancamentos() {
       {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
       <button onClick={() => setCor(vermelho)}>Vermelho</button>
       <button onClick={() => setCor(azul)}>Azul</button>
+      <button onClick={() => setCor(marrom)}>Marrom</button>
+      <button onClick={() => setCor(nude)}>Nude</button>
     </>
+    
+    
   );
+  
+  
 }
 
 export default Lancamentos;

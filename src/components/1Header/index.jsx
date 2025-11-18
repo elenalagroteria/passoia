@@ -12,6 +12,7 @@ function Header() {
         <li>NOVIDADES</li>
       </ul>
     </header>
+    
   );
 }
 export default Header;
