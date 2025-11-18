@@ -1,6 +1,6 @@
 import "./looks.scss";
 import labios from "../../assets/looks-labios.png";
-import olhos from "../../assets/looks-olhos.png";
+import olhos from "../../assets/looks-olhos.jpg";
 import rosto from "../../assets/looks-rosto.png";
 import tendencia from "../../assets/looks-tendencia.png"
 
