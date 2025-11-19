@@ -1,4 +1,4 @@
-import imgnovidades from "../../assets/imgnovidades.png";
+import imgnovidades from "../../assets/imgnovidades.jpg";
 
 function Novidades() {
   return (

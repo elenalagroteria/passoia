@@ -10,10 +10,15 @@ function Looks() {
       <h1>Looks e dicas de maquiagem</h1>
       
       <article className="categorias">
+      
       <a href={labios} className="boxcategoria"><h3>Lábios</h3></a>
+
       <a href={olhos} className="boxcategoria"><h3>Olhos</h3></a>
+
       <a href={rosto} className="boxcategoria"><h3>Rosto</h3></a>
+      
       <a href={tendencia} className="boxcategoria"><h3>Tendências</h3></a>
+
       </article>
     </section>
     

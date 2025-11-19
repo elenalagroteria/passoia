@@ -3,11 +3,13 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2vw; 
+  padding: 6vh 2vw;
+  /* Falta adicionar a sombra embaixo */
 
   ul {
     font-family: Poppins, sans-serif;
     display: flex;
+    gap: 2vw;
   }
 
   li {

@@ -1,4 +1,5 @@
 import banner from "../../assets/banner-serum.jpg";
+import "./banner.scss";
 
 function Banner() {
   return (
