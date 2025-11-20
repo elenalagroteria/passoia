@@ -1,115 +1,72 @@
-
-
-/* import { useState } from "react";
-
-function Lancamentos() {
-  // Estado que guarda a cor (imagem) atual
-  // O valor inicial é a imagem "vermelho"
-  const [cor, setCor] = useState(vermelho);
-
-  return (
-    <>
-      
-      <section className="boxlancamentos">
-        
-      <h1>Aproveite os lançamentos</h1>
-      
-      <section className="lancamentos">
-      <section className="imagens">
-      
-        <section className="batons">
-          <img src={glossaberto} alt="Batom líquido aberto" />
-          <img src={battons} alt="Batons" />
-          <img src={glossfechados} alt="Batom líquido fechado" />
-        </section>
-        
-    
-      <img src={cor} alt="Batom" />
-      </section>
-      
-      
-      <section className="boxdescricao">
-        <img src={estrelas} alt="Estrelas" />
-        <h2>Matte Premium</h2> 
-        <h3>Cores disponíveis</h3>
-        
-        <section className="botoescores">
-      
-      <button onClick={() => setCor(vermelho)}>Vermelho</button>
-      <button onClick={() => setCor(azul)}>Azul</button>
-      <button onClick={() => setCor(marrom)}>Marrom</button>
-      <button onClick={() => setCor(nude)}>Nude</button>
-        </section>
-        
-        <h4>Descrição</h4>
-        <p>O Batom Matte possui uma fórmula inovadora desenvolvida para entregar o máximo de cor na primeira aplicação com um deslize suave e macio. Tem acabamento matte aveludado e manteiga de manga que ajuda a hidratar e a proteger os lábios contra ressecamento. Ajuda na hidratação dos lábios, textura fina e macia que não pesa nos lábios.</p>
-      </section>
-      </section>
-      </section>
-    </>
-  );
-}
-
-*/
-
 .boxlancamentos {
-  width: 100%;
+  width: 100%;              
+  max-width: 1400px;        
+  margin: 0 auto;           
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3vh;
+  padding: 5vh 0;
+  text-align: center;
 }
 
+/* CONTAINER GERAL DOS LANÇAMENTOS */
 .lancamentos {
   display: flex;
   flex-direction: row;
-  padding: 3vh 0;
-  gap: 2vh;
+  padding: 0.5vh 0;
+  gap: 1vh;
   align-items: center;
+  justify-content: center;  
   flex-wrap: wrap;
+  width: 100%;
 }
 
+/* BLOCO DAS IMAGENS (miniaturas + batom grande) */
 .imagens {
   display: flex;
-  padding: 2vh;
+  align-items: center;
+  padding: 0 3vh;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.imgbatom {
-  width: 100%;
-  max-width: 350px;   
-  height: auto;       
-  object-fit: cover;  
-  padding: 0 1vw;
-}
-
 
 .batons {
   display: flex;
   flex-direction: column;
-  padding: 0 2vw;
-  height: 100%;
-  gap: 2vh;
+  padding: 0 1vw;
+  width: 6vw;
+  gap: 4vh;
+
+  img {
+    width: auto;
+    height: auto;
+  }
 }
 
-/* Box de descrição */
+.imgbatom {
+  width: 22vw;
+  height: auto;
 
+}
+
+/* BOX DE DESCRIÇÃO */
 .boxdescricao {
   width: 40%;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5); 
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
-  padding: 3vh;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  padding: 2vh 1.8vw;
+  justify-content: flex-start;
+  text-align: left;
 
-  /* Estrelinhas */
   img {
-    width: 25%;
+    width: 20%;
   }
 
-  /* Botões */
   .botoescores {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
-  
+
   button {
     border: none;
     border-radius: 100%;
@@ -120,20 +77,97 @@ function Lancamentos() {
   }
 
   .vermelho {
-    background-color: #E1342A;
+    background-color: #e1342a;
   }
 
   .marrom {
-    background-color: #73282D; 
+    background-color: #73282d;
   }
 
   .azul {
-    background-color: #B1B0D8;
+    background-color: #b1b0d8;
   }
 
   .nude {
-    background-color: #DE755E;
+    background-color: #de755e;
+  }
+}
+
+/* Texto */
+h2, h3, h4, p {
+  font-family: Roboto;
+  padding-bottom: 1vh;
+}
+
+h3 {
+  font-size: 1.4vh;
+  padding-top: 1vh;
+}
+
+h4 {
+  font-size: 2.5vh;
+  padding-top: 3vh;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.9vh;
+}
+
+
+/* ========================================= */
+/* ==========   RESPONSIVIDADE   =========== */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+  .lancamentos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
   }
 
-  /* Texto */
+  .imagens {
+    width: 90%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .batons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vh 0;
+    width: 22.5vw;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .imgbatom {
+    width: 90vw;
+    max-width: 65vw;
+    padding: 0;
+  }
+
+  .boxdescricao {
+    width: 64%;
+    margin-top: 2vh;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 30vw;
+    }
+  }
+
+  .botoescores {
+    justify-content: center;
+  }
+
+  p {
+    padding: 0 0.9vw;
+  }
 }

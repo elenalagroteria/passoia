@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .categorias {
@@ -11,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1vh;
-    padding-top: 2vh;
+    padding-top: 2vh 1vw 0 30vw;
 }
 
 .boxcategoria {
@@ -19,6 +20,7 @@
     position: relative;
     overflow: hidden;
     max-width: 600px;
+    
    
     img {
         width: 100%;
@@ -39,5 +41,24 @@
         font-weight: 700;
         text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
 
+    }
+}
+
+@media (max-width: 768px) {
+    .looksedicas {
+        width: 100%;
+    }
+
+    .categorias {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 30vw;
+    }
+
+    .boxcategoria {
+        h3 {
+            font-size: 1.6vh;
+        }
     }
 }

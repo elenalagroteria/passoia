@@ -3,13 +3,14 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 6vh 2vw;
+  padding: 4vh 2vw;
   /* Falta adicionar a sombra embaixo */
 
   ul {
     font-family: Poppins, sans-serif;
     display: flex;
     gap: 2vw;
+    font-size: 1.2vw;
   }
 
   li {
@@ -17,6 +18,22 @@ header {
   }
 
   img {
+    max-width: 15%;
+  }
+}
+
+/* ========================================= */
+/* ==========   RESPONSIVIDADE   =========== */
+/* ========================================= */
+
+@media (max-width: 768px) {
+  header {
+  img {
     max-width: 30%;
   }
+
+  ul {
+    font-size: 3vw;
+  }
+}
 }
