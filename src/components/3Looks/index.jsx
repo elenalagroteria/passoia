@@ -11,13 +11,13 @@ function Looks() {
       
       <article className="categorias">
       
-      <a href={labios} className="boxcategoria"><h3>Lábios</h3></a>
+      <a href="" className="boxcategoria"><img src={labios}/><h3>Lábios</h3></a>
 
-      <a href={olhos} className="boxcategoria"><h3>Olhos</h3></a>
+      <a href="" className="boxcategoria"><img src={olhos}/><h3>Olhos</h3></a>
 
-      <a href={rosto} className="boxcategoria"><h3>Rosto</h3></a>
+      <a href="" className="boxcategoria"><img src={rosto}/><h3>Rosto</h3></a>
       
-      <a href={tendencia} className="boxcategoria"><h3>Tendências</h3></a>
+      <a href="" className="boxcategoria"><img src={tendencia}/><h3>Tendências</h3></a>
 
       </article>
     </section>

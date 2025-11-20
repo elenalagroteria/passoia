@@ -1,15 +1,4 @@
-import "./footer.scss";
-
-import mastercard from "../../assets/iconespagamento/mastercard.svg";
-import visa from "../../assets/iconespagamento/visa.svg";
-import pix from "../../assets/iconespagamento/pix.svg";
-import boleto from "../../assets/iconespagamento/boleto.svg";
-import facebook from "../../assets/iconesredes/socialface.svg";
-import instagram from "../../assets/iconesredes/socialinsta.svg";
-import twitter from "../../assets/iconesredes/socialtwitter.svg";
-import youtube from "../../assets/iconesredes/socialyoutube.svg";  
-
-function Footer() {
+/* function Footer() {
     return (
         <footer>
             <section className="atendimento">
@@ -43,6 +32,67 @@ function Footer() {
             </section>
         </footer>
     );
+} */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+    h2 {
+        font-family: Roboto;
+        text-transform: uppercase;
+    }
 }
 
-export default Footer;
+.atendimento {
+    display: flex;
+    flex-direction: column;
+
+    a{
+        font-family: Roboto;
+        color: #2D2D2D;
+        text-decoration: none;
+        font-weight: 300;
+        padding: 0.7vh 0;
+    }
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .cartaoepix {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        max-width: 16vw;
+        min-width: 5vw;
+        padding-right: 2vw;
+    }
+
+    .boleto{
+        width: 25%;
+
+    }
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+
+    .iconesredes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    a {
+        padding-right: 0.5vw;
+        padding-top: 1vh;
+    }
+}

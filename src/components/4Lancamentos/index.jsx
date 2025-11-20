@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./lancamentos.scss";
 
 // Import das imagens
 import vermelho from "../../assets/vermelho.png";
@@ -20,7 +21,7 @@ function Lancamentos() {
       {/* Esse box é inteiro para os lançamentos, para separar título e conteúdo */}
       <section className="boxlancamentos">
         
-      <h1>APROVEITE OS LANÇAMENTOS</h1>
+      <h1>Aproveite os lançamentos</h1>
       
       <section className="lancamentos">
       <section className="imagens">
@@ -32,7 +33,7 @@ function Lancamentos() {
         </section>
         
       {/* A imagem exibida será sempre a do estado "cor" */}
-      <img src={cor} alt="Batom" />
+      <img className="imgbatom" src={cor} alt="Batom" />
       </section>
       
       {/* Box de descrição e botões */}
@@ -43,10 +44,10 @@ function Lancamentos() {
         
         <section className="botoescores">
       {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
-      <button onClick={() => setCor(vermelho)}>Vermelho</button>
-      <button onClick={() => setCor(azul)}>Azul</button>
-      <button onClick={() => setCor(marrom)}>Marrom</button>
-      <button onClick={() => setCor(nude)}>Nude</button>
+      <button className="vermelho" onClick={() => setCor(vermelho)}>Vermelho</button>
+      <button className="azul" onClick={() => setCor(azul)}>Azul</button>
+      <button className="marrom" onClick={() => setCor(marrom)}>Marrom</button>
+      <button className="nude" onClick={() => setCor(nude)}>Nude</button>
         </section>
         
         <h4>Descrição</h4>
