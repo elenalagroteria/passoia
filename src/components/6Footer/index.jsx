@@ -11,6 +11,7 @@ import youtube from "../../assets/iconesredes/socialyoutube.svg";
 
 function Footer() {
     return (
+        <section className="container">
         <footer>
             <section className="atendimento">
                 <h2>Atendimento</h2>
@@ -42,6 +43,7 @@ function Footer() {
                 </article>
             </section>
         </footer>
+        </section>
     );
 }
 

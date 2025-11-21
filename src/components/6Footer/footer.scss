@@ -1,38 +1,4 @@
-/* function Footer() {
-    return (
-        <footer>
-            <section className="atendimento">
-                <h2>Atendimento</h2>
-                <a href="">Fale Conosco</a>
-                <a href="">Perguntas Frequentes</a>
-                <a href="">Meus Pedidos</a>
-                <a href="">Nossas Lojas</a>
-            </section>
-            <section className="pagamento">
-                <h2>Formas de pagamento</h2>
-                <section className="cartaoepix">
-                    <img src={mastercard} alt="Mastercard" />
-                    <img src={visa} alt="Visa" />
-                    <img src={pix} alt="Pix" />
-                </section>
-                <section className="boleto">
-                    <img src={boleto} alt="Boleto" />
-                </section>
-            </section>
-            <section className="redes">
-                <article className="titulo">
-                <h2>Redes Sociais</h2>
-                </article>
-                <article className="iconesredes">
-                <a href=""><img src={facebook} alt="Facebook" /></a>
-                <a href=""><img src={instagram} alt="Instagram" /></a>
-                <a href=""><img src={twitter} alt="Twitter" /></a>
-                <a href=""><img src={youtube} alt="YouTube" /></a>
-                </article>
-            </section>
-        </footer>
-    );
-} */
+
 
 footer {
     display: flex;
@@ -95,4 +61,43 @@ footer {
         padding-right: 0.5vw;
         padding-top: 1vh;
     }
+}
+
+/* ========================================= */
+/* ==========   RESPONSIVIDADE   =========== */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .container {
+        align-items: center;
+    }
+    
+    footer {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 7vw;
+        gap: 5vw;
+
+        h2 {
+            font-size: 3.4vw;
+        }
+    }
+
+    .atendimento {
+        max-width: 40%;
+        a {
+            font-size: 3vw;
+            padding: 1vw 0;
+        }
+    }
+
+    .pagamento {
+        max-width: 40%;
+    }
+
+    .redes {
+        width: 40%;
+    }
+
 }
