@@ -23,21 +23,25 @@ header {
   }
 }
 
+.menuButton {
+  display: none;
+}
+
+
 /* ========================================= */
 /* ==========   RESPONSIVIDADE   =========== */
 /* ========================================= */
 
 @media (max-width: 768px) {
   header {
-  img {
-    max-width: 30%;
-  }
+    img {
+      max-width: 30%;
+    }
 
-  ul {
-    font-size: 3vw;
-
+    ul {
+      font-size: 3vw;
+    }
   }
-}
 
 
 /* Menu Sanduíche */
@@ -63,18 +67,17 @@ header {
 }
 
 .menuSanduiche {
-  display: none;
+  display: none; // escondido por padrão no desktop
 }
 
 .show {
   display: flex;
-  width: 50%;
-  height: auto;
-  position: absolute;
-  top: 103px;
-  right: 0;
-  background-color: #E4E4E4;
   flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 60%;
+  background-color: #E4E4E4;
   padding: 20px;
   gap: 1rem;
 
@@ -83,7 +86,6 @@ header {
     font-size: 2.2vh;
   }
 }
-
 }
 
 @media (max-width: 480px) {
