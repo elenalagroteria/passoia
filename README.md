@@ -1,16 +1,43 @@
-# React + Vite
+# **Passoia — Landing Page (React + SCSS)**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido durante o curso de Desenvolvimento Front-End do *Vai na Web*. A proposta foi transformar uma interface criada no Figma em uma landing page funcional, responsiva e estruturada com **React**, **HTML** e **SCSS**, seguindo práticas reais do fluxo entre UX/UI e Front-End.
 
-Currently, two official plugins are available:
+## **Preview do projeto**
+**Deploy:** https://passoia-three.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Layout no Figma:** interface fornecida pelo curso (não autoral)
 
-## React Compiler
+## **Tecnologias utilizadas**
+- **HTML5**
+- **SCSS (Sass)**
+- **JavaScript / ES6+**
+- **React**
+- **Git e GitHub**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## **Funcionalidades**
+- Interface construída a partir do layout do Figma
+- Estrutura baseada em **componentes reutilizáveis**
+- Desenvolvimento seguindo **Mobile First**
+- Layout totalmente responsivo
 
-## Expanding the ESLint configuration
+## **Aprendizados**
+Este projeto reforçou minha compreensão de:
+- Tradução fiel de layouts do Figma para código
+- Componentização no React
+- Organização de estilos utilizando SCSS
+- Depuração de erros estruturais em componentes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Como rodar o projeto**
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/passoia.git
+
+# Acesse a pasta
+cd passoia
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
